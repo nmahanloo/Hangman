@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HW2: JavaScript</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="game_title">
+      <h1 id="categoryTitle"></h1>
+    </div>
+  </header>
+  <main class="game">
+    <div class="hangman">
+      <div id="hanging"></div>
+    </div>
+    <div class="vocabulary">
+      <div class="the_word">
+        <h3>Selected Vocabulary</h3>
+      </div>
+      <div class="display_vocab">
+        <h3 id="display_word"></h3>
+      </div>
+      <div class="feedback">
+        <h4 id="inputFeedback"></h4>
+      </div>
+      <div class="get_letter">
+        <div class="infoLetter">
+          <h3 style="padding-top: 4px;">Guess the vocabulary letter by letter</h3>
+        </div>
+        <div class="separator"></div>
+        <input type="text" id="letter">
+        <div class="separator"></div>
+        <button class="button" id="letterSubmit">
+          <span class="button_shadow"></span>
+          <span class="button_edge"></span>
+          <span class="button_front">
+            Go
+          </span>
+        </button>
+      </div>
+      <div class="get_word">
+        <div class="infoWord">
+          <h3 style="padding-top: 4px;">Or, guess the word at once to win or lose</h3>
+        </div>
+        <div class="separator"></div>
+        <input type="text" id="word">
+        <div class="separator"></div>
+        <button class="button" id="wordSubmit">
+          <span class="button_shadow"></span>
+          <span class="button_edge_2"></span>
+          <span class="button_front_2">
+            Go
+          </span>
+        </button>
+      </div>
+      <div id="halfSeparator"></div>
+      <div class="newGame">
+        <div id="smallSeparator"></div>
+        <a href="index.html" id="newGameLink">New Game</a>
+      </div>
+    </div>
+    <script src="js/game.js"></script>
+  </main>
+  <footer>
+      <img src="img/csumb.png" alt="Logo of CSUMB" style="width: 103px; height: auto;"/>
+      <br/>
+      CST336 Internet Programming. 2023 &copy; Nima Mahanloo <br/>
+      <strong>Disclaimer:</strong> The information in this webpage is fictitious.<br/>
+      It is used for academic purposes only.
+  </footer>
+</body>
+
+</html>
